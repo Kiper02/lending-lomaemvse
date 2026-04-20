@@ -1,0 +1,120 @@
+@media (max-width: 992px) {
+    .advantages-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .details-grid {
+        gap: 30px;
+    }
+    .about-wrapper {
+        flex-direction: column;
+    }
+    .stats-block {
+        width: 100%;
+        flex-basis: auto;
+        height: auto;
+        margin-bottom: 30px;
+    }
+    .cut-text {
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .call-block {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .call-employee {
+        position: static;
+        transform: none;
+        width: 200px;
+        margin: 0 auto 20px;
+    }
+    .call-form {
+        width: 100%;
+        padding: 20px;
+    }
+    .call-header h2 {
+        font-size: 32px;
+    }
+    .call-header h4 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero__content h1 {
+        font-size: 32px;
+    }
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .contacts-area {
+        justify-content: center;
+    }
+    .hero__content {
+        margin-top: 40px;
+        text-align: center;
+    }
+    .hero-features {
+        text-align: left;
+        display: inline-block;
+    }
+    .section-title {
+        font-size: 32px;
+    }
+    .price-item {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+    .price-value {
+        margin-left: 0;
+        margin-top: 12px;
+    }
+    .tab-btn {
+        font-size: 16px;
+        padding: 6px 12px;
+    }
+    .details-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .works-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .slider-container {
+        width: 100%;
+        max-width: 480px;
+    }
+    .review-card {
+        flex: 0 0 calc(100% - 30px);
+    }
+    .review-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .faq-card {
+        flex: 0 0 calc(100% - 30px);
+    }
+    .footer-wrapper {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    .social-links {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .advantages-grid {
+        grid-template-columns: 1fr;
+    }
+    .advantage-card {
+        padding: 20px;
+    }
+    .advantage-card h3 {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ломаем всё — демонтажные работы</title>
+    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="/css/components.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+    <link rel="stylesheet" href="/css/modal.css" />
+  </head>
+  <body>
+    <div class="hero">
+      <div class="container">
+        <header class="header">
+          <div class="logo-area">
+            <img src="assets/logo.svg" alt="logo" width="224" height="64" />
+            <p>
+              ДЕМОНТАЖНЫЕ РАБОТЫ В МОСКВЕ <br />
+              И МОСКОВСКОЙ ОБЛАСТИ
+            </p>
+          </div>
+          <div class="contacts-area">
+            <div>
+              <p class="phone-large">+7-916-478-64-81</p>
+              <p class="email">info@lomaemvse.ru</p>
+            </div>
+            <button class="call-btn" data-modal="call">Заказать звонок</button>
+          </div>
+        </header>
+      </div>
+
+      <nav class="main-nav">
+        <ul class="nav-list container">
+          <li><a href="#work">За что мы берёмся</a></li>
+          <li><a href="#about">Кто мы</a></li>
+          <li><a href="#price">Стоимость</a></li>
+          <li><a href="#advantages">преимущества</a></li>
+          <li><a href="#works">Наши работы</a></li>
+          <li><a href="#reviews">Отзывы</a></li>
+          <li><a href="#faq">Вопрос-ответ</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <div class="container">
+        <div class="hero__content">
+          <h1>
+            АККУРАТНО ДЕМОНТИРУЕМ <br />
+            ВСЁ, ЧТО НУЖНО
+          </h1>
+          <p>Выполняем все виды демонтажных работ</p>
+          <ul class="hero-features">
+            <li>
+              <p>Без мусора и пыли</p>
+              <p>вывезём всё сами</p>
+            </li>
+            <li>
+              <p>Без шума и жалоб</p>
+              <p>соблюдаем закон о тишине</p>
+            </li>
+            <li>
+              <p>Быстро и качественно</p>
+              <p>в срок от 2 часов</p>
+            </li>
+            <li>
+              <p>Профессионально</p>
+              <p>не зацепим трубы, проводку</p>
+            </li>
+            <li>
+              <p>С гарантией</p>
+              <p>работаем по договору</p>
+            </li>
+          </ul>
+          <button class="btn-primary" data-modal="estimate">
+            Заказать расчёт
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <section id="work" class="section work-types">
+      <div class="container">
+        <h2 class="section-title">ЗА ЧТО МЫ БЕРЕМСЯ?</h2>
+        <img src="assets/jobs.png" alt="виды работ" class="full-width-img" />
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container">
+        <h2 class="section-title">КТО МЫ? УЗНАЙТЕ БОЛЬШЕ О НАС!</h2>
+        <div class="about-wrapper">
+          <div class="stats-block">
+            <div class="stat-item">
+              <div class="stat-number">9 ЛЕТ</div>
+              <div class="stat-desc">ЗАНИМАЕМСЯ ДЕМОНТАЖЕМ</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">&gt;2134</div>
+              <div class="stat-desc">ОБЪЕКТОВ УЖЕ ЗАВЕРШИЛИ</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">&gt;32010</div>
+              <div class="stat-desc">ТОНН МУСОРА ВЫВЕЗЛИ НА ПОЛИГОН</div>
+            </div>
+          </div>
+          <div class="cut-text">
+            <h4>
+              К нам приходят частные клиенты, строительные организации и
+              владельцы коммерческой недвижимости, потому что...
+            </h4>
+            <ul>
+              <li>
+                Знают, что к их пожеланиям <strong>прислушаются</strong> и
+                предложат лучшие варианты для решения поставленной задачи по
+                демонтажу.
+              </li>
+              <li>
+                Уверены, что демонтажем будут заниматься
+                <strong>опытные специалисты-строители</strong>, а не ребята с
+                улицы.
+              </li>
+              <li>
+                Доверяют тем, кто применяет в работе
+                <strong>специальный инструмент</strong> и проводит
+                подготовительные работы перед демонтажем.
+              </li>
+              <li>
+                Довольны тем, что получают <strong>полный сервис</strong>,
+                включая консультации, уборку помещений, вывоз мусора.
+              </li>
+              <li>
+                Понимают, что природе нельзя наносить урон свалкой строительного
+                мусора, и поддерживают его вывоз транспортом, у которого есть на
+                это <strong>разрешения</strong>.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="price" class="section price">
+      <div class="container">
+        <h2 class="section-title">СТОИМОСТЬ РАБОТ</h2>
+        <div class="price-tabs">
+          <button class="tab-btn active" data-tab="floors">Полы</button>
+          <button class="tab-btn" data-tab="walls">Стены</button>
+          <button class="tab-btn" data-tab="ceilings">Потолки</button>
+        </div>
+        <div class="price-list" id="priceList"></div>
+      </div>
+    </section>
+
+    <section id="advantages" class="section advantages">
+      <div class="container">
+        <h2 class="section-title">ПОЧЕМУ ВЫБИРАЮТ НАС</h2>
+        <div class="advantages-grid">
+          <div class="advantage-card">
+            <div class="advantage-icon">
+              <img src="assets/clock.svg" alt="" />
+            </div>
+            <h3>Точно в срок</h3>
+            <p>Мы строго придерживаемся планов и сроков исполнения.</p>
+          </div>
+          <div class="advantage-card">
+            <div class="advantage-icon">
+              <img src="assets/employee.svg" alt="" />
+            </div>
+            <h3>Профессионализм</h3>
+            <p>
+              К работе допускаются только сотрудники, имеющие профессиональную
+              подготовку.
+            </p>
+          </div>
+          <div class="advantage-card">
+            <div class="advantage-icon">
+              <img src="assets/tool.svg" alt="" />
+            </div>
+            <h3>Инструмент</h3>
+            <p>
+              Для каждой задачи у нас есть необходимый профессиональный
+              инструмент.
+            </p>
+          </div>
+          <div class="advantage-card">
+            <div class="advantage-icon">
+              <img src="assets/quality.svg" alt="" />
+            </div>
+            <h3>Качество</h3>
+            <p>Гарантия: сервис качество. <strong>100%</strong></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section details">
+      <div class="container">
+        <h2 class="section-title">
+          ВАЖНЫЕ ДЕТАЛИ ДЕМОНТАЖА,<br />
+          О КОТОРЫХ <span class="accent">ВЫ ДОЛЖНЫ ЗНАТЬ</span>
+        </h2>
+        <div class="details-grid">
+          <div class="detail-card">
+            <h3>ПРЕДВАРИТЕЛЬНАЯ ПОДГОТОВКА</h3>
+            <p>
+              Перед началом работ обязательно проверим, где проложена проводка,
+              какие коммуникации есть, чтобы не задеть их в процессе демонтажа,
+              сделаем фотофиксацию состояния вашего подъезда
+            </p>
+          </div>
+          <div class="detail-card">
+            <h3>БЕЗОПАСНЫЙ ВЫНОС МУСОРА</h3>
+            <p>
+              Не сбрасываем мусорные мешки с балконов и окон. Аккуратно сносим
+              их вниз по лестничным проходам. Если мусор рассыпается,
+              обязательно убираем после себя и в подъезде, и на улице, в месте
+              погрузки
+            </p>
+          </div>
+          <div class="detail-card">
+            <h3>ОБСУЖДЕНИЕ С СОСЕДЯМИ</h3>
+            <p>
+              При необходимости обсудим с соседями время, в которое мы им не
+              помещаем звуками демонтажа, чтобы к вам не было претензий из-за
+              шума
+            </p>
+          </div>
+          <div class="detail-card">
+            <h3>ОТВЕТСТВЕННОСТЬ</h3>
+            <p>
+              Если повредим что-то в процессе демонтажа или при выносе мусора,
+              всё восстановим за свой счет
+            </p>
+          </div>
+          <div class="detail-card">
+            <h3>ГАРАНТИИ</h3>
+            <p>
+              Вы защищены договором. Мы соблюдаем сроки и не требуем никаких
+              доплат, если сумма за указанную в договоре услугу уже озвучена
+            </p>
+          </div>
+          <div class="detail-card">
+            <h3>ЧИСТОТА</h3>
+            <p>
+              Вы удивитесь чистоте после демонтажа. Наши сотрудники всегда
+              начисто убираются после проведения работ
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="works" class="section works">
+      <div class="container">
+        <h2 class="section-title">НАШИ РАБОТЫ</h2>
+        <div class="works-grid">
+          <div class="slider-container" data-slider="panel-home">
+            <div class="slider-image">
+              <img
+                src="assets/slider/panel-home/one.jpg"
+                alt="Демонтаж квартиры в панельном доме"
+              />
+            </div>
+            <div class="slider-caption">
+              <h3>ДЕМОНТАЖ КВАРТИРЫ В ПАНЕЛЬНОМ ДОМЕ</h3>
+            </div>
+            <div class="slider-controls">
+              <button class="slider-prev">‹</button
+              ><button class="slider-next">›</button>
+            </div>
+          </div>
+          <div class="slider-container" data-slider="office">
+            <div class="slider-image">
+              <img
+                src="assets/slider/office/one.jpg"
+                alt="Демонтаж стен в офисном помещении"
+              />
+            </div>
+            <div class="slider-caption">
+              <h3>
+                ДЕМОНТАЖ СТЕН В ОФИСНОМ ПОМЕЩЕНИИ С СОХРАНЕНИЕМ ПОЛА И ПЛИТКИ
+              </h3>
+            </div>
+            <div class="slider-controls">
+              <button class="slider-prev">‹</button
+              ><button class="slider-next">›</button>
+            </div>
+          </div>
+          <div class="slider-container" data-slider="cutting">
+            <div class="slider-image">
+              <img
+                src="assets/slider/cutting/one.jpg"
+                alt="Резка дверных проемов"
+              />
+            </div>
+            <div class="slider-caption"><h3>РЕЗКА ДВЕРНЫХ ПРОЕМОВ</h3></div>
+            <div class="slider-controls">
+              <button class="slider-prev">‹</button
+              ><button class="slider-next">›</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews" class="section reviews">
+      <div class="container">
+        <h2 class="section-title">ОТЗЫВЫ</h2>
+        <div class="reviews-carousel">
+          <div class="reviews-track-wrapper">
+            <div class="reviews-track" id="reviewsTrack"></div>
+          </div>
+          <div class="carousel-dots" id="reviewsDots"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-cooperation">
+      <div class="cooperation-bg">
+        <div class="container">
+          <h2>СОТРУДНИЧАЕМ</h2>
+          <p class="subtitle">Со строительными и ремонтными компаниями</p>
+          <div class="about-wrapper">
+            <div
+              class="stats-block"
+              style="
+                background-color: transparent;
+                justify-content: flex-start;
+                gap: 20px;
+              "
+            >
+              <div class="cooperation-form" style="padding: 5px 25px">
+                <h3>Предлагаем выгодные условия сотрудничества</h3>
+                <p>
+                  Узнайте больше, заполнив форму! Наш специалист свяжется с вами
+                  в течение <strong>15 минут.</strong>
+                </p>
+                <form id="cooperationForm">
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Ваше имя"
+                    required
+                  />
+                  <input
+                    type="tel"
+                    name="phone"
+                    placeholder="Телефон"
+                    required
+                  />
+                  <button type="submit" class="btn-accent">
+                    Узнать условия
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="cut-text">
+              <ul>
+                <li>
+                  <h5>Возьмем на себя все работы по демонтажу.</h5>
+                  <p>
+                    Полностью подготовим помещение под ремонт или выполним лишь
+                    один из этапов, который вы не можете осуществить из-за
+                    отсутствия инструмента или кадров.
+                  </p>
+                </li>
+                <li>
+                  <h5>Предоставим хорошие скидки</h5>
+                  <p>на демонтаж и вывоз мусора вашим клиентам.</p>
+                </li>
+                <li>
+                  <h5>Порекомендуем вас своим клиентам</h5>
+                  <p>которые ищут исполнителей именно в вашей сфере.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section faq">
+      <div class="container">
+        <h2 class="section-title">ВОПРОС-ОТВЕТ</h2>
+        <div class="faq-carousel">
+          <div class="faq-track-wrapper">
+            <div class="faq-track" id="faqTrack"></div>
+          </div>
+          <div class="faq-dots" id="faqDots"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="call-section">
+      <div class="container">
+        <div class="call-header">
+          <div>
+            <h2>У ВАС ЕЩЕ ЕСТЬ ВОПРОСЫ?</h2>
+            <h4>Задайте их нашему специалисту прямо сейчас!</h4>
+          </div>
+        </div>
+        <div class="call-block">
+          <div class="call-employee">
+            <img src="assets/faq-employee.png" alt="Специалист" />
+          </div>
+          <form class="call-form" id="callForm">
+            <input type="text" placeholder="Ваше имя" required />
+            <input type="tel" placeholder="Телефон" required />
+            <input type="text" placeholder="Ваш вопрос" />
+            <label class="checkbox-label">
+              <input type="checkbox" required /> Даю согласие на обработку
+              персональных данных
+            </label>
+            <button type="submit" class="btn-accent">Отправить заявку</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacts" class="section contacts">
+      <div class="container">
+        <div class="contacts-wrapper">
+          <div class="contacts-card">
+            <h1>Контакты</h1>
+            <ul class="contacts-list">
+              <li>
+                <img src="assets/icons/geo.svg" alt="" />
+                <div>
+                  <h5>Адрес:</h5>
+                  <p>г. Москва, Московское Шоссе 25 к. 1 оф. 814</p>
+                </div>
+              </li>
+              <li>
+                <img src="assets/icons/phone.svg" alt="" />
+                <div>
+                  <h5>Телефон:</h5>
+                  <p>+7-916-478-64-81</p>
+                </div>
+              </li>
+              <li>
+                <img src="assets/icons/mail.svg" alt="" />
+                <div>
+                  <h5>Почта:</h5>
+                  <p>info@lomaemvse.ru</p>
+                </div>
+              </li>
+              <li>
+                <img src="assets/icons/clock.svg" alt="" />
+                <div>
+                  <h5>Время работы:</h5>
+                  <p>ПН-ПТ: 8 - 22 | СБ-ВС: 9 - 20</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="logo-area">
+            <img src="assets/logo.svg" alt="logo" width="224" height="64" />
+            <p>
+              ДЕМОНТАЖНЫЕ РАБОТЫ В МОСКВЕ <br />
+              И МОСКОВСКОЙ ОБЛАСТИ
+            </p>
+          </div>
+          <ul class="social-links">
+            <li>
+              <a href="#"
+                ><img src="assets/icons/youtube.svg" alt="YouTube"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="assets/icons/instagram.svg" alt="Instagram"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="assets/icons/facebook.svg" alt="Facebook"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="assets/icons/twitter.svg" alt="Twitter"
+              /></a>
+            </li>
+          </ul>
+          <p class="copyright">copyright ©</p>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>
