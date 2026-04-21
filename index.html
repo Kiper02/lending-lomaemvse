@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ломаем всё — демонтажные работы</title>
-    <link rel="stylesheet" href="/css/base.css" />
-    <link rel="stylesheet" href="/css/components.css" />
-    <link rel="stylesheet" href="/css/responsive.css" />
-    <link rel="stylesheet" href="/css/modal.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/modal.css" />
   </head>
   <body>
     <div class="hero">
@@ -22,11 +22,19 @@
           </div>
           <div class="contacts-area">
             <div>
-              <p class="phone-large">+7-916-478-64-81</p>
+              <div style="display: flex; align-items: center; gap: 5px">
+                <img src="assets/phone.svg" alt="phone" width="24" height="24" />
+                <p class="phone-large">+7-916-478-64-81</p>
+              </div>
               <p class="email">info@lomaemvse.ru</p>
             </div>
             <button class="call-btn" data-modal="call">Заказать звонок</button>
           </div>
+          <button class="burger" aria-label="Меню">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </header>
       </div>
 
@@ -494,7 +502,7 @@
         </div>
       </div>
     </footer>
-    <script type="module" src="/js/main.js"></script>
+    <script type="module" src="js/main.js"></script>
     [[!FetchIt?
     &snippet=`FormIt`
     &form=`#modalForm`

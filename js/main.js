@@ -4,9 +4,11 @@ import "./modules/reviews.js";
 import "./modules/faq.js";
 import "./modules/priceTabs.js";
 import "./modules/forms.js";
+import { initBurger } from "./modules/burger.js"
 
 document.addEventListener("DOMContentLoaded", () => {
   const modal = initModal();
+  initBurger();
 
   const callBtns = document.querySelectorAll(
     ".call-btn, .hero__content button",

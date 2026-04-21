@@ -5,9 +5,11 @@
     display: flex;
     flex-direction: column;
     padding-bottom: 190px;
+    padding-top: 10px;
 }
 
 .header {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,8 +21,10 @@
 .logo-area {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 30px;
     flex-wrap: wrap;
+    font-weight: 800;
+    font-size: 14px;
 }
 
 .logo-area p {
@@ -34,8 +38,39 @@
     gap: 20px;
 }
 
+.burger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1001;
+}
+
+.burger span {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.burger.active span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+.burger.active span:nth-child(2) {
+    opacity: 0;
+}
+.burger.active span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
 .phone-large {
-    font-weight: 700;
+    font-weight: 800;
     font-size: x-large;
 }
 
@@ -46,18 +81,19 @@
 .call-btn {
     background-color: white;
     color: black;
-    border: none;
-    padding: 15px 25px;
+    padding: 12px 34px;
     border-radius: 30px;
     cursor: pointer;
     font-weight: 600;
     font-size: 14px;
+    border: 3px solid rgba(0, 0, 0, 0.8);
 }
 
 .main-nav {
     width: 100%;
     background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(2px);
+    margin-top: 10px;
 }
 
 .nav-list {
@@ -75,8 +111,8 @@
 .nav-list li a {
     color: white;
     text-decoration: none;
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 12px;
+    font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     transition: opacity 0.2s;
@@ -87,16 +123,19 @@
 }
 
 .hero__content {
-    margin-top: 80px;
+    margin-top: 151px;
 }
 
 .hero__content h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
+    font-size: 44px;
+    margin-bottom: 50px;
+    font-weight: 900;
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.4));
 }
 
 .hero__content p {
-    font-size: 20px;
+    font-size: 24px;
+    font-weight: 500;
     margin-bottom: 30px;
 }
 
@@ -137,8 +176,8 @@
     top: 4px;
     width: 16px;
     height: 16px;
-    background-color: #ff9900;
-    border: 2px solid black;
+    background: linear-gradient(#FFCD21, #FFA800);
+    border: 4px solid rgba(0, 0, 0, 0.7);
     border-radius: 50%;
 }
 
